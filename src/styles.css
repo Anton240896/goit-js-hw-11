@@ -31,7 +31,6 @@ input {
 }
 
 .search-form {
-
     border: none;
     background-image: radial-gradient(circle, #35e1a8 20%, rgb(185, 215, 77) 70%);
     justify-content: center;
@@ -49,6 +48,7 @@ button {
     cursor: pointer;
 
 }
+
 
 .gallery {
     display: flex;

@@ -62,11 +62,11 @@ button {
 
 }
 
-/* 
+
 .photo-card:hover {
     transition: transform 300ms cubic-bezier(0.07, 0.76, 0.93, 0.59) 0.1s;
-    transform: scale(1.07);
-} */
+    transform: scale(1.04);
+}
 
 
 .load-more {

@@ -31,8 +31,9 @@ form {
     background-image: radial-gradient(circle, #35e1a8 20%, rgb(185, 215, 77) 70%);
     justify-content: center;
     padding-top: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     display: flex;
+    width: 100%;
 }
 
 
@@ -69,6 +70,7 @@ button {
 .info {
     display: flex;
     gap: 10px;
+    justify-content: center;
 }
 
 /* @media screen and (max-width:) {} */

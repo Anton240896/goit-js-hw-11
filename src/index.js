@@ -87,7 +87,7 @@ elem.btnLoadMore.style.display = 'none';
 
         elem.gallery.insertAdjacentHTML("beforeend", markupData.htmlCode);
       
-        elem.btnLoadMore.style.display = 'block';     
+        // elem.btnLoadMore.style.display = 'block';     
         elem.btnLoadMore.disabled = false;
    
         // simpleLightbox gallery 

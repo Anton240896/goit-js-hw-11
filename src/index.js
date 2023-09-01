@@ -97,6 +97,8 @@ elem.btnLoadMore.style.display = 'none';
         if (page >= totalPages) {     
             elem.btnLoadMore.style.display = 'none'; 
             };
+            Notify.success(`'👌Hooray! We found ${results.totalHits} images.'`);
+
     }
 
     catch (error) {

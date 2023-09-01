@@ -48,7 +48,7 @@ elem.btnLoadMore.style.display = 'none';
  elem.form.addEventListener("submit", async (evt) => {
     evt.preventDefault();
 
-    const { elements: { searchQuery } } = evt.target;
+    const { elements: { searchQuery } } = evt.currentTarget;
     
     //let
     searchQueryResult = searchQuery.value;

@@ -66,7 +66,7 @@ button {
 .photo-card:hover {
     transition: border-color 300ms cubic-bezier(0.07, 0.76, 0.93, 0.59) 0.1s;
     border-color: #1cc148;
-    box-shadow: 0px 3px 20px #e2df3e;
+    box-shadow: 8px 5px 27px #e2df3e;
 }
 
 

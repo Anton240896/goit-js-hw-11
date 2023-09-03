@@ -31,6 +31,16 @@ input {
     border-radius: 100;
 }
 
+input::placeholder {
+    position: absolute;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    padding-top: 2px;
+    letter-spacing: 0.04em;
+    padding-left: 20%;
+}
+
 .search-form {
     border: none;
     background-image: radial-gradient(circle, #35e1a8 20%, rgb(185, 215, 77) 70%);

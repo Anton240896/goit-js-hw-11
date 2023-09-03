@@ -32,7 +32,6 @@ input {
 }
 
 input::placeholder {
-    position: absolute;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -54,6 +53,13 @@ input::placeholder {
     border-bottom: 5px solid #35e1a8;
 }
 
+.search-form input {
+    padding-left: 30px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+
+}
 
 button {
     width: 40px;

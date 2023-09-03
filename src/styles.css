@@ -26,6 +26,7 @@ input {
     background-color: rgb(239, 228, 228);
     border: none;
     border-radius: 100;
+
 }
 
 input::placeholder {
@@ -34,7 +35,6 @@ input::placeholder {
     font-size: 18px;
     padding-top: 2px;
     letter-spacing: 0.04em;
-    padding-left: 20%;
 }
 
 .search-form {
@@ -85,8 +85,6 @@ input::placeholder {
     transition: transform 300ms cubic-bezier(0.07, 0.76, 0.93, 0.59) 0.1s;
     transform: scale(1.04);
 }
-
-
 
 
 .load-more {

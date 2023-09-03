@@ -58,7 +58,7 @@ input::placeholder {
 
 }
 
-button {
+.button-search {
     width: 40px;
     border: none;
     background-color: rgb(165, 214, 235);
@@ -93,11 +93,11 @@ button {
     width: 70px;
     height: 40px;
     border: none;
-    background-color: rgb(165, 214, 235);
     cursor: pointer;
     margin-left: 600px;
-    color: #070707;
+    color: #35e1a8;
     border-radius: 50%;
+    background-color: #000;
 }
 
 .info {

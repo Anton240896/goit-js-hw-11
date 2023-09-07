@@ -163,29 +163,33 @@
  };
  
   /*====================RENDER========================*/
- async function renderPhotos(arr) {
-
-     return arr.map(({largeImageURL, webformatURL, tags, likes, views,comments,downloads} ) =>
-         `<a href="${largeImageURL}"><div class="photo-card">
-         <img src="${webformatURL}" alt="${tags}" loading="lazy"
+ async function renderPhotos(results) {
+ 
+     const { hits  } = results;
+ 
+     markupData.markup =  hits.map((hit ) =>
+         `<a href="${hit.largeImageURL}"><div class="photo-card">
+         <img src="${hit.webformatURL}" alt="${hit.tags}" loading="lazy"
            class="img-item" />
          <div class="info">
      <p class="info-item">
-       <b>❤️:</b>${likes}
+       <b>❤️:</b>${hit.likes}
      </p>
      <p class="info-item">
-       <b>😶:</b>${views}
+       <b>😶:</b>${hit.views}
      </p>
      <p class="info-item">
-       <b>🖊:</b>${comments}
+       <b>🖊:</b>${hit.comments}
      </p>
      <p class="info-item">
-       <b>🠗:</b>${downloads}
+       <b>🠗:</b>${hit.downloads}
      </p>
    </div>
  </div></a>`).join("");
      
+     return markupData.markup;
      
- }
+ };
+
 
  

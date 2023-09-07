@@ -163,31 +163,28 @@
  };
  
   /*====================RENDER========================*/
- async function renderPhotos(results) {
- 
-     const { hits  } = results;
- 
-     markupData.markup =  hits.map((hit ) =>
-         `<a href="${hit.largeImageURL}"><div class="photo-card">
-         <img src="${hit.webformatURL}" alt="${hit.tags}" loading="lazy"
+ async function renderPhotos(arr) {
+
+     return arr.map(({largeImageURL, webformatURL, tags, likes, views,comments,downloads} ) =>
+         `<a href="${largeImageURL}"><div class="photo-card">
+         <img src="${webformatURL}" alt="${tags}" loading="lazy"
            class="img-item" />
          <div class="info">
      <p class="info-item">
-       <b>❤️:</b>${hit.likes}
+       <b>❤️:</b>${likes}
      </p>
      <p class="info-item">
-       <b>😶:</b>${hit.views}
+       <b>😶:</b>${views}
      </p>
      <p class="info-item">
-       <b>🖊:</b>${hit.comments}
+       <b>🖊:</b>${comments}
      </p>
      <p class="info-item">
-       <b>🠗:</b>${hit.downloads}
+       <b>🠗:</b>${downloads}
      </p>
    </div>
  </div></a>`).join("");
      
-     return markupData.markup;
      
  };
 

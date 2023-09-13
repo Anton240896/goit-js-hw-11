@@ -185,7 +185,6 @@
  </div></a>`).join("");
      
      return markupData.markup;
-     
  };
 
 
@@ -248,6 +247,7 @@
 //         return;
 //       }
 //       refs.loadMoreBtn.disabled = false;
+
   
 //       if (data.hits.length < picApi.PerPage) {
 //         refs.loadMoreBtn.disabled = true;
